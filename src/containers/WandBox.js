@@ -1,18 +1,22 @@
 import React from 'react';
 import CharacterSelector from '../components/CharacterSelector';
-import WandSelector from '../components/WandSelector';
+// import WandSelector from '../components/WandSelector';
 
-class WandSelector extends React.Component{
+class WandBox extends React.Component{
   constructor(props){
     super(props);
     this.state = {
-      characters = [];
-      currentCharacter = '';
+      characters: [],
+      currentCharacter: ''
     }
   }
 
   render(){
-    return
+    return(
+      <div className="wand-box">
+        THIS IS THE WANDBOX
+      </div>
+    )
   }
 
 
