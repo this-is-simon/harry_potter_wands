@@ -24,7 +24,7 @@ class WandBox extends React.Component{
   render(){
     return(
       <div className="wand-box">
-        <CharacterSelector />
+        <CharacterSelector characters={this.state.characters}/>
       </div>
     )
   }

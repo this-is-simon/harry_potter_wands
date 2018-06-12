@@ -2,11 +2,16 @@ import React from 'react';
 
 const CharacterSelector = (props) => {
 
+  const characters = props.characters.map((character, index) => {
+    return <option value={index} key={index}>{character.name}</option>
+  })
+
 
 
   return(
     <select className="character-select">
       <option disabled value="default">Choose a Student...</option>
+      {characters}
     </select>
   )
 }
